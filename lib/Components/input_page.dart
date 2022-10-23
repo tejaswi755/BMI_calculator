@@ -21,10 +21,12 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
       ),
+
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -100,8 +102,8 @@ class _InputPageState extends State<InputPage> {
                     ),
                     child: Slider(
                       value: height.toDouble(),
-                      min: 120,
-                      max: 220,
+                      min: 110,
+                      max: 225,
                       inactiveColor: Color(0xFF8D8E98),
                       onChanged: (double slidervalue) {
                         setState(() {
